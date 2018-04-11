@@ -1,0 +1,75 @@
+main: CH_MPI defined. rank = 300 number_procs= 1024
+          Just inside main|Mem Usage: OS=     6.859 (vm=   225.738) MT_peak=     0.000 MT_current=     0.000  OSPeakRSS=     6.996 (vm=   225.738) (MB)
+ ParmParsing file /global/cscratch1/sd/dhkoo/s20/inputs.r888.666 ...
+ ParmParsing completed.
+parmParseInput complete
+Done reading in ABR file (AMRBoxesAndRanksIO.cpp)
+readABRfile complete  numLevels from amrBoxes.size()= 3 tm=0.898316
+Define ProblemDomains and DBLs ...
+ ilev0 vectDomains=((0,0,0) (63,63,63) (0,0,0)), 0 0 0
+ ilev1 vectDomains=((0,0,0) (255,255,255) (0,0,0)), 0 0 0
+ ilev2 vectDomains=((0,0,0) (1023,1023,1023) (0,0,0)), 0 0 0
+     before replicateGrids|Mem Usage: OS=     7.555 (vm=   238.082) MT_peak=     0.177 MT_current=     0.141  OSPeakRSS=     7.555 (vm=   238.109) (MB)
+replicateGrids: rf=(6,6,6) product=216 -------------------------------------
+original a_domainLength =(1,1,1)
+ unitDomainSize[0] =(64,64,64)
+ unitDomainSize[1] =(256,256,256)
+ unitDomainSize[2] =(1024,1024,1024)
+ replicateScopeBox.numPts()= 216
+ new baseDomainBox= ((0,0,0) (383,383,383) (0,0,0))
+modified vectDomains[0] =((0,0,0) (383,383,383) (0,0,0)), 0 0 0
+modified vectDomains[1] =((0,0,0) (1535,1535,1535) (0,0,0)), 0 0 0
+modified vectDomains[2] =((0,0,0) (6143,6143,6143) (0,0,0)), 0 0 0
+ a_domainLength changed to=(6,6,6)
+replicateGrids done.---------------------------
+      after replicateGrids|Mem Usage: OS=    27.660 (vm=   258.074) MT_peak=    38.242 MT_current=    20.089  OSPeakRSS=    43.375 (vm=   273.875) (MB)
+ Note: replicateGrids already calls LoadBalance
+ Re-LoadBalance
+rank=  300 ilev= 0  nboxes=      1728 b= 0.00 mo= 0.00 lb= 0.00 domain=((0,0,0) (383,383,383) (0,0,0)), 0 0 0
+rank=  300 ilev= 1  nboxes=     28728 b= 0.00 mo= 0.14 lb= 0.00 domain=((0,0,0) (1535,1535,1535) (0,0,0)), 0 0 0
+rank=  300 ilev= 2  nboxes=    295920 b= 0.03 mo= 0.09 lb= 0.01 domain=((0,0,0) (6143,6143,6143) (0,0,0)), 0 0 0
+          before GridStats|Mem Usage: OS=    31.199 (vm=   302.551) MT_peak=    63.136 MT_current=    20.119  OSPeakRSS=    73.840 (vm=   345.441) (MB)
+Physical Domain Size of Level 0     5.662e+07 problemDom=((0,0,0) (383,383,383) (0,0,0)), 0 0 0
+Physical Domain Size of Level 1     3.624e+09 problemDom=((0,0,0) (1535,1535,1535) (0,0,0)), 0 0 0
+Physical Domain Size of Level 2     2.319e+11 problemDom=((0,0,0) (6143,6143,6143) (0,0,0)), 0 0 0
+Level0 Nboxes=    1728 Ncells=     56623104  5.66e+07  Ncells+1G=     67917312  6.79e+07  hirank= 1023 %Covered=100.00
+Level1 Nboxes=   28728 Ncells=    179490816  1.79e+08  Ncells+1G=    234532800  2.35e+08  hirank= 1023 %Covered=  4.95
+Level2 Nboxes=  295920 Ncells=   3005005824  3.01e+09  Ncells+1G=   3827758464  3.83e+09  hirank= 1023 %Covered=  1.30
+Total  Nboxes=  326376 Ncells=   3241119744  3.24e+09  Ncells+1G=   4130208576  4.13e+09
+   before phi and rhs Init|Mem Usage: OS=    37.641 (vm=   309.324) MT_peak=    63.136 MT_current=    20.119  OSPeakRSS=    73.840 (vm=   345.441) (MB)
+Initialize phi=1 tm1=1.2726 and rhs=0 tm2=0.0755069
+    after phi and rhs Init|Mem Usage: OS=   364.629 (vm=   636.195) MT_peak=   397.387 MT_current=   354.371  OSPeakRSS=   364.762 (vm=   636.195) (MB)
+Computed coarsestDx = 6/384 = 0.015625
+Computed coarsestDy = 6/384 = 0.015625
+Computed coarsestDz = 6/384 = 0.015625
+refinementRatio= 4 4 4 
+         after first write|Mem Usage: OS=   364.762 (vm=   636.195) MT_peak=   397.387 MT_current=   354.371  OSPeakRSS=   364.762 (vm=   636.195) (MB)
+ writing PHI sim_phi00.hdf5
+ Write #0 outputData tm=16.8791
+     Vector 13ProblemDomain                                   216 b       0.0002 Mb  peak=     0.0004
+     Vector 17DisjointBoxLayout                               624 b       0.0006 Mb  peak=     0.0006
+     Vector 3Box                                            42308 b       0.0403 Mb  peak=     7.9423
+     Vector 5Entry                                       10444032 b       9.9602 Mb  peak=    18.9910
+     Vector 6VectorI3BoxE                                      96 b       0.0001 Mb  peak=     0.0001
+     Vector 6VectorISt4pairIi11LayoutIndexEE             10444032 b       9.9602 Mb  peak=    18.9910
+     Vector 6VectorIiE                                         96 b       0.0001 Mb  peak=     0.0001
+     Vector 9DataIndex                                       8904 b       0.0085 Mb  peak=     0.0150
+     Vector P10MotionItem                                   40240 b       0.0384 Mb  peak=     0.0384
+     Vector P9FArrayBox                                      5936 b       0.0057 Mb  peak=     0.0057
+     Vector P9LevelDataI9FArrayBoxE                            48 b       0.0000 Mb  peak=     0.0000
+     Vector St4pairIi11LayoutIndexE                        148448 b       0.1416 Mb  peak=     0.2473
+     Vector i                                                6056 b       0.0058 Mb  peak=     1.1346
+       Pool Copier::MotionItem                             571200 b       0.5447 Mb  peak=     0.5447
+    BaseFab d                                           349869360 b     333.6614 Mb  peak=   333.6614
+    BaseFab 6VectorI9DataIndexE                               120 b       0.0001 Mb  peak=     0.0002
+    BaseFab 12DataIterator                                    720 b       0.0007 Mb  peak=     0.0009
+    BaseFab b                                                 270 b       0.0003 Mb  peak=     0.0003
+    BaseFab i                                                 180 b       0.0002 Mb  peak=     0.0002
+    BaseFab 6VectorI5EntryE                                   600 b       0.0006 Mb  peak=     0.0006
+    BaseFab 6VectorIS_ISt4pairIi11LayoutIndexEEE              120 b       0.0001 Mb  peak=     0.0002
+    BaseFab 6VectorI11LayoutIndexE                            960 b       0.0009 Mb  peak=     0.0010
+      Total Allocated:                                  371584566 b     354.3707 Mb  peak=   399.6559
+ getPeakMemoryFromOS(peakRSS, peakVM)=560.441 856.75
+                 after all|Mem Usage: OS=   368.887 (vm=   648.969) MT_peak=   399.638 MT_current=     0.545  OSPeakRSS=   560.441 (vm=   856.750) (MB)
+Everything done.   wall-clock time: 19.840128 seconds
+MPI_Finalize() begin...

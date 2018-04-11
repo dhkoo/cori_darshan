@@ -1,0 +1,21 @@
+==============================================================================
+POSIX: plot_filename	time	size (B)	size (GB)	B/sec	GB/sec
+sim_phi00.hdf5   19.07495   669137866376   623.183200486   35079403425.7   32.6702403144
+Total_plotfile  19.07495  seconds for  623 GB = 669137866376 Bytes
+Rate_plotfile  35079403425.7 B/sec =  32.6702403144 GB/sec
+------------------------------------------------------------------------------
+POSIX: IO time Plotfile	GB/s Plotfile	max GB/s Plot	max file Plot	min GB/s Plot	min file Plot
+19.07495 	32.6702403144 	35079403425.7 	sim_phi00.hdf5 	35079403425.7 	sim_phi00.hdf5
+==============================================================================
+MPIIO: plot_filename	time	size (B)	size (GB)	B/sec	GB/sec
+sim_phi00.hdf5   25.221559   669137866376   623.183200486   26530392763.4   24.708353694
+Total_plotfile  25.221559  seconds for  623 GB = 669137866376 Bytes
+Rate_plotfile  26530392763.4 B/sec =  24.708353694 GB/sec
+------------------------------------------------------------------------------
+MPIIO: IO time Plotfile	GB/s Plotfile	max GB/s Plot	max file Plot	min GB/s Plot	min file Plot
+25.221559 	24.708353694 	26530392763.4 	sim_phi00.hdf5 	26530392763.4 	sim_phi00.hdf5
+==============================================================================
+#######################################################################
+M Time Plotfile	M GB/s Plotfile	M Peak Plotfile	M ave GB/s	P Time Plotfile	P GB/s Plotfile	P Peak Plotfile	P ave GB/s
+25.221559 	24.708353694 	26530392763.4 	24.708353694 	19.07495 	32.6702403144 	35079403425.7 	32.6702403144
+output plot filename= io_perf_d3.png
