@@ -1,0 +1,122 @@
+PE 0: MPICH MPIIO environment settings:
+PE 0:   MPICH_MPIIO_HINTS_DISPLAY                 = 1
+PE 0:   MPICH_MPIIO_HINTS                         = *:romio_cb_write=enable:romio_ds_write=disable
+PE 0:   MPICH_MPIIO_ABORT_ON_RW_ERROR             = disable
+PE 0:   MPICH_MPIIO_CB_ALIGN                      = 2
+PE 0:   MPICH_MPIIO_DVS_MAXNODES                  = 32
+PE 0:   MPICH_MPIIO_AGGREGATOR_PLACEMENT_DISPLAY  = 0
+PE 0:   MPICH_MPIIO_AGGREGATOR_PLACEMENT_STRIDE   = -1
+PE 0:   MPICH_MPIIO_MAX_NUM_IRECV                 = 50
+PE 0:   MPICH_MPIIO_MAX_NUM_ISEND                 = 50
+PE 0:   MPICH_MPIIO_MAX_SIZE_ISEND                = 10485760
+PE 0: MPICH MPIIO statistics environment settings:
+PE 0:   MPICH_MPIIO_STATS                         = 1
+PE 0:   MPICH_MPIIO_TIMERS                        = 0
+PE 0:   MPICH_MPIIO_WRITE_EXIT_BARRIER            = 1
+PE 0: MPIIO hints for /global/cscratch1/sd/husung/vpic-runs/vtest01.h5:
+          cb_buffer_size           = 16777216
+          romio_cb_read            = automatic
+          romio_cb_write           = enable
+          cb_nodes                 = 32
+          cb_align                 = 2
+          romio_no_indep_rw        = false
+          romio_cb_pfr             = disable
+          romio_cb_fr_types        = aar
+          romio_cb_fr_alignment    = 1
+          romio_cb_ds_threshold    = 0
+          romio_cb_alltoall        = automatic
+          ind_rd_buffer_size       = 4194304
+          ind_wr_buffer_size       = 524288
+          romio_ds_read            = disable
+          romio_ds_write           = disable
+          striping_factor          = 32
+          striping_unit            = 33554432
+          romio_lustre_start_iodevice = 0
+          direct_io                = false
+          aggregator_placement_stride = -1
+          abort_on_rw_error        = disable
+          cb_config_list           = *:*
+          romio_filesystem_type    = CRAY ADIO:
++--------------------------------------------------------+
+| MPIIO write access patterns for /global/cscratch1/sd/husung/vpic-runs/vtest01.h5
+|   independent writes      = 0
+|   collective writes       = 1280
+|   independent writers     = 0
+|   aggregators             = 32
+|   stripe count            = 32
+|   stripe size             = 33554432
+|   system writes           = 10252
+|   stripe sized writes     = 10232
+|   aggregators active      = 256,0,0,1024 (1, <= 16, > 16, 32)
+|   total bytes for writes  = 343597388192 = 327680 MiB = 320 GiB
+|   ave system write size   = 33515156
+|   read-modify-write count = 0
+|   read-modify-write bytes = 0
+|   number of write gaps    = 6
+|   ave write gap size      = 156788678420
+| See "Optimizing MPI I/O on Cray XE Systems" S-0013-20 for explanations.
++--------------------------------------------------------+
+PE 0: MPIIO hints for /global/cscratch1/sd/darshanlogs/2018/4/11/husung_vpicio_uni_id11545064_4-11-24499-2190963098603511245.darshan_partial:
+          cb_buffer_size           = 16777216
+          romio_cb_read            = enable
+          romio_cb_write           = enable
+          cb_nodes                 = 4
+          cb_align                 = 2
+          romio_no_indep_rw        = true
+          romio_cb_pfr             = disable
+          romio_cb_fr_types        = aar
+          romio_cb_fr_alignment    = 1
+          romio_cb_ds_threshold    = 0
+          romio_cb_alltoall        = automatic
+          ind_rd_buffer_size       = 4194304
+          ind_wr_buffer_size       = 524288
+          romio_ds_read            = disable
+          romio_ds_write           = disable
+          striping_factor          = 1
+          striping_unit            = 1048576
+          romio_lustre_start_iodevice = 0
+          direct_io                = false
+          aggregator_placement_stride = -1
+          abort_on_rw_error        = disable
+          cb_config_list           = *:*
+          romio_filesystem_type    = CRAY ADIO:
++--------------------------------------------------------+
+| MPIIO write access patterns for /global/cscratch1/sd/darshanlogs/2018/4/11/husung_vpicio_uni_id11545064_4-11-24499-2190963098603511245.darshan_partial
+|   independent writes      = 2
+|   collective writes       = 896
+|   independent writers     = 1
+|   aggregators             = 4
+|   stripe count            = 1
+|   stripe size             = 1048576
+|   system writes           = 9
+|   stripe sized writes     = 0
+|   aggregators active      = 896,0,0,0 (1, <= 2, > 2, 4)
+|   total bytes for writes  = 174188
+|   ave system write size   = 19354
+|   read-modify-write count = 0
+|   read-modify-write bytes = 0
+|   number of write gaps    = 0
+|   ave write gap size      = NA
+| See "Optimizing MPI I/O on Cray XE Systems" S-0013-20 for explanations.
++--------------------------------------------------------+
+Number of paritcles: 83886080 
+Finished initializing particles 
+Opened H5Part file... 
+Before writing particles 
+Step is set 
+Num particles is set 
+Written variable 1 
+Written variable 2 
+Written variable 3 
+Written variable 4 
+Written variable 5 
+Written variable 6 
+Written variable 7 
+Written variable 8 
+After writing particles 
+After closing particles 
+
+Timing results
+60.855141 seconds elapsed in just writing data
+65.144020 seconds elapsed in opening, writing, closing file
+
