@@ -1,0 +1,101 @@
+PE 0: MPICH MPIIO environment settings:
+PE 0:   MPICH_MPIIO_HINTS_DISPLAY                 = 1
+PE 0:   MPICH_MPIIO_HINTS                         = *:romio_cb_write=enable:romio_ds_write=disable
+PE 0:   MPICH_MPIIO_ABORT_ON_RW_ERROR             = disable
+PE 0:   MPICH_MPIIO_CB_ALIGN                      = 2
+PE 0:   MPICH_MPIIO_DVS_MAXNODES                  = 32
+PE 0:   MPICH_MPIIO_AGGREGATOR_PLACEMENT_DISPLAY  = 0
+PE 0:   MPICH_MPIIO_AGGREGATOR_PLACEMENT_STRIDE   = -1
+PE 0:   MPICH_MPIIO_MAX_NUM_IRECV                 = 50
+PE 0:   MPICH_MPIIO_MAX_NUM_ISEND                 = 50
+PE 0:   MPICH_MPIIO_MAX_SIZE_ISEND                = 10485760
+PE 0: MPICH MPIIO statistics environment settings:
+PE 0:   MPICH_MPIIO_STATS                         = 1
+PE 0:   MPICH_MPIIO_TIMERS                        = 0
+PE 0:   MPICH_MPIIO_WRITE_EXIT_BARRIER            = 1
+PE 0: MPIIO hints for sim_phi00.hdf5:
+          cb_buffer_size           = 16777216
+          romio_cb_read            = automatic
+          romio_cb_write           = enable
+          cb_nodes                 = 96
+          cb_align                 = 2
+          romio_no_indep_rw        = false
+          romio_cb_pfr             = disable
+          romio_cb_fr_types        = aar
+          romio_cb_fr_alignment    = 1
+          romio_cb_ds_threshold    = 0
+          romio_cb_alltoall        = automatic
+          ind_rd_buffer_size       = 4194304
+          ind_wr_buffer_size       = 524288
+          romio_ds_read            = disable
+          romio_ds_write           = disable
+          striping_factor          = 96
+          striping_unit            = 33554432
+          romio_lustre_start_iodevice = 0
+          direct_io                = false
+          aggregator_placement_stride = -1
+          abort_on_rw_error        = disable
+          cb_config_list           = *:*
+          romio_filesystem_type    = CRAY ADIO:
++--------------------------------------------------------+
+| MPIIO write access patterns for sim_phi00.hdf5
+|   independent writes      = 9
+|   collective writes       = 10240
+|   independent writers     = 1
+|   aggregators             = 96
+|   stripe count            = 96
+|   stripe size             = 33554432
+|   system writes           = 9450
+|   stripe sized writes     = 9379
+|   aggregators active      = 2048,2048,0,6144 (1, <= 48, > 48, 96)
+|   total bytes for writes  = 314834423128 = 300249 MiB = 293 GiB
+|   ave system write size   = 33315811
+|   read-modify-write count = 0
+|   read-modify-write bytes = 0
+|   number of write gaps    = 16
+|   ave write gap size      = 94292304448
+| See "Optimizing MPI I/O on Cray XE Systems" S-0013-20 for explanations.
++--------------------------------------------------------+
+PE 0: MPIIO hints for /global/cscratch1/sd//darshanlogs/2018/4/11/dhkoo_iomi3d.Linux.64.CC.ftn.OPTHIGH.MPI.ex.sim.d.col.171030_id11545184_4-11-32586-9856110566958690860.darshan_partial:
+          cb_buffer_size           = 16777216
+          romio_cb_read            = enable
+          romio_cb_write           = enable
+          cb_nodes                 = 4
+          cb_align                 = 2
+          romio_no_indep_rw        = true
+          romio_cb_pfr             = disable
+          romio_cb_fr_types        = aar
+          romio_cb_fr_alignment    = 1
+          romio_cb_ds_threshold    = 0
+          romio_cb_alltoall        = automatic
+          ind_rd_buffer_size       = 4194304
+          ind_wr_buffer_size       = 524288
+          romio_ds_read            = disable
+          romio_ds_write           = disable
+          striping_factor          = 1
+          striping_unit            = 1048576
+          romio_lustre_start_iodevice = 0
+          direct_io                = false
+          aggregator_placement_stride = -1
+          abort_on_rw_error        = disable
+          cb_config_list           = *:*
+          romio_filesystem_type    = CRAY ADIO:
++--------------------------------------------------------+
+| MPIIO write access patterns for /global/cscratch1/sd//darshanlogs/2018/4/11/dhkoo_iomi3d.Linux.64.CC.ftn.OPTHIGH.MPI.ex.sim.d.col.171030_id11545184_4-11-32586-9856110566958690860.darshan_partial
+|   independent writes      = 2
+|   collective writes       = 14336
+|   independent writers     = 1
+|   aggregators             = 4
+|   stripe count            = 1
+|   stripe size             = 1048576
+|   system writes           = 10
+|   stripe sized writes     = 0
+|   aggregators active      = 12288,2048,0,0 (1, <= 2, > 2, 4)
+|   total bytes for writes  = 1460445 = 1 MiB
+|   ave system write size   = 146044
+|   read-modify-write count = 0
+|   read-modify-write bytes = 0
+|   number of write gaps    = 0
+|   ave write gap size      = NA
+| See "Optimizing MPI I/O on Cray XE Systems" S-0013-20 for explanations.
++--------------------------------------------------------+
