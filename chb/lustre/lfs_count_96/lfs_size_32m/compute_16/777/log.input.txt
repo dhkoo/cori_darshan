@@ -1,0 +1,18 @@
+----------- Print out Input Vars ------------------
+Reading from input file: /global/cscratch1/sd/dhkoo/s20/inputs.r888.777
+domain_length=(1,1,1)
+ncomp=6
+verbose=3
+num_benchmark_iterations=1
+nwriters=0
+replicateGridsFactor=(7,7,7)
+phi_initializer=1
+rhs_initializer=0
+write_rhs=0
+write_phi=1
+ordering=1
+reLoadBalance=1
+computeSumRHS=0
+computeSumPHI=0
+grids_file = s64x64x64L2r4i80b8-32o0f0.00100p1.abr
+------------------------------------------------
