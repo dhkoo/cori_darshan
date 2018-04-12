@@ -1,0 +1,8 @@
+Thu Apr 12 01:00:40 PDT 2018
+lfs setting count:64 size:32m
+compute node:16 input:555
+Linux nid00575 4.4.49-92.11.1_3.0-cray_ari_c #1 SMP Mon Mar 12 16:50:27 UTC 2018 (3.0.103) x86_64 x86_64 x86_64 GNU/Linux
+Thu Apr 12 01:00:40 PDT 2018
+defined: MPI
+defined: NDEBUG
+Thu Apr 12 01:01:12 PDT 2018

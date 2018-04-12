@@ -1,0 +1,25 @@
+Number of Processors: 2048
+
+
+         Totals        WC per.      count        avg         min         max  
+============================================================================
+           Everything  100.00%          1      47.51 [     47.36,      47.65]
+----------------------------------------------------------------------------
+           read input   59.70%          1      28.37 [     28.21,      28.50]
+      create unit DBL    0.19%          1       0.09 [      0.00,       0.10]
+        reLoadBalance    1.00%          1       0.47 [      0.38,       0.57]
+            GridStats    0.05%          1       0.02 [      0.01,       0.04]
+       replicateGrids    0.36%          1       0.17 [      0.16,       0.32]
+             initData    1.69%          1       0.80 [      0.51,       1.16]
+        ComputeSumRHS    0.00%          0       0.00 [      0.00,       0.00]
+        ComputeSumPHI    0.00%          0       0.00 [      0.00,       0.00]
+           ComputePDV    0.00%          0       0.00 [      0.00,       0.00]
+           OutputData   36.94%          1      17.55 [     17.18,      17.84]
+              Cleanup    0.04%          1       0.02 [      0.01,       0.02]
+============================================================================
+T0         table tots:  99.97%          8      47.50 [     46.46,      48.56]
+
+Single OldTimer Start/Stop Cost =   5.2230358e-07 sec.
+Total OldTimer Start/Stop Calls =     2.1000000000e+01 
+Avg OldTimer Start/Stop per Proc=     2.1000000000e+01 
+Avg Est OldTimer Cost per Proc  =           0.000 sec.  (   0.00%)

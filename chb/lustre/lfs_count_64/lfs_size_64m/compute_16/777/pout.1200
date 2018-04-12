@@ -1,0 +1,47 @@
+main: CH_MPI defined. rank = 1200 number_procs= 2048
+          Just inside main|Mem Usage: OS=     7.020 (vm=   231.242) MT_peak=     0.000 MT_current=     0.000  OSPeakRSS=     7.160 (vm=   231.242) (MB)
+ ParmParsing file /global/cscratch1/sd/dhkoo/s20/inputs.r888.666 ...
+ ParmParsing completed.
+parmParseInput complete
+Done reading in ABR file (AMRBoxesAndRanksIO.cpp)
+readABRfile complete  numLevels from amrBoxes.size()= 3 tm=28.2942
+Define ProblemDomains and DBLs ...
+ ilev0 vectDomains=((0,0,0) (63,63,63) (0,0,0)), 0 0 0
+ ilev1 vectDomains=((0,0,0) (255,255,255) (0,0,0)), 0 0 0
+ ilev2 vectDomains=((0,0,0) (1023,1023,1023) (0,0,0)), 0 0 0
+     before replicateGrids|Mem Usage: OS=     7.711 (vm=   231.492) MT_peak=     0.177 MT_current=     0.141  OSPeakRSS=     7.734 (vm=   235.238) (MB)
+replicateGrids: rf=(6,6,6) product=216 -------------------------------------
+original a_domainLength =(1,1,1)
+ unitDomainSize[0] =(64,64,64)
+ unitDomainSize[1] =(256,256,256)
+ unitDomainSize[2] =(1024,1024,1024)
+ replicateScopeBox.numPts()= 216
+ new baseDomainBox= ((0,0,0) (383,383,383) (0,0,0))
+modified vectDomains[0] =((0,0,0) (383,383,383) (0,0,0)), 0 0 0
+modified vectDomains[1] =((0,0,0) (1535,1535,1535) (0,0,0)), 0 0 0
+modified vectDomains[2] =((0,0,0) (6143,6143,6143) (0,0,0)), 0 0 0
+ a_domainLength changed to=(6,6,6)
+replicateGrids done.---------------------------
+      after replicateGrids|Mem Usage: OS=    27.840 (vm=   251.453) MT_peak=    38.172 MT_current=    20.010  OSPeakRSS=    43.555 (vm=   267.254) (MB)
+ Note: replicateGrids already calls LoadBalance
+ Re-LoadBalance
+rank= 1200 ilev= 0  nboxes=      1728 b= 0.00 mo= 0.00 lb= 0.00 domain=((0,0,0) (383,383,383) (0,0,0)), 0 0 0
+rank= 1200 ilev= 1  nboxes=     28728 b= 0.00 mo= 0.19 lb= 0.00 domain=((0,0,0) (1535,1535,1535) (0,0,0)), 0 0 0
+rank= 1200 ilev= 2  nboxes=    295920 b= 0.03 mo= 0.09 lb= 0.01 domain=((0,0,0) (6143,6143,6143) (0,0,0)), 0 0 0
+          before GridStats|Mem Usage: OS=    32.203 (vm=   289.828) MT_peak=    62.965 MT_current=    20.017  OSPeakRSS=    74.871 (vm=   332.719) (MB)
+Physical Domain Size of Level 0     5.662e+07 problemDom=((0,0,0) (383,383,383) (0,0,0)), 0 0 0
+Physical Domain Size of Level 1     3.624e+09 problemDom=((0,0,0) (1535,1535,1535) (0,0,0)), 0 0 0
+Physical Domain Size of Level 2     2.319e+11 problemDom=((0,0,0) (6143,6143,6143) (0,0,0)), 0 0 0
+Level0 Nboxes=    1728 Ncells=     56623104  5.66e+07  Ncells+1G=     67917312  6.79e+07  hirank= 1727 %Covered=100.00
+Level1 Nboxes=   28728 Ncells=    179490816  1.79e+08  Ncells+1G=    234532800  2.35e+08  hirank= 2047 %Covered=  4.95
+Level2 Nboxes=  295920 Ncells=   3005005824  3.01e+09  Ncells+1G=   3827758464  3.83e+09  hirank= 2047 %Covered=  1.30
+Total  Nboxes=  326376 Ncells=   3241119744  3.24e+09  Ncells+1G=   4130208576  4.13e+09
+   before phi and rhs Init|Mem Usage: OS=    38.645 (vm=   296.602) MT_peak=    62.965 MT_current=    20.017  OSPeakRSS=    74.871 (vm=   332.719) (MB)
+Initialize phi=1 tm1=0.695823 and rhs=0 tm2=0.0374088
+    after phi and rhs Init|Mem Usage: OS=   195.363 (vm=   453.199) MT_peak=   227.050 MT_current=   184.102  OSPeakRSS=   195.523 (vm=   453.199) (MB)
+Computed coarsestDx = 6/384 = 0.015625
+Computed coarsestDy = 6/384 = 0.015625
+Computed coarsestDz = 6/384 = 0.015625
+refinementRatio= 4 4 4 
+         after first write|Mem Usage: OS=   195.523 (vm=   453.199) MT_peak=   227.050 MT_current=   184.102  OSPeakRSS=   195.523 (vm=   453.199) (MB)
+ writing PHI sim_phi00.hdf5
